@@ -101,7 +101,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-      <img src = "firefox_logo-only_RGB120.png" alt = "Логотип лучшего браузера Мозила"
+      <img src = "firefox_logo-only_RGB120.png" alt = "Логотип лучшего браузера Мозила">
     </header>
 
     <main>
@@ -118,32 +118,31 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img 
-              srcset="firefox_logo-only_RGB120.png 480w,
-             firefox_logo-only_RGB400.png 400w"
-             sizes="(max-width: 480px) 120px,
-                    400px
-          src ="firefox_logo-only_RGB400.png" alt= "логотип">
-        </a>
-        <a href="https://www.mozilla.org/">
           <img srcset="firefox_logo-only_RGB120.png 480w,
              firefox_logo-only_RGB400.png 400w"
              sizes="(max-width: 480px) 120px,
-                    400px
+                    400px"
+          src ="firefox_logo-only_RGB400.png" alt= "логотип">
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img srcset="mozilla-dinosaur-head120.png 480w,
+          mozilla-dinosaur-head400.png"
+             sizes="(max-width: 480px) 120px,
+                    400px"
          src ="mozilla-dinosaur-head400.png" alt= "голова мозила">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img  srcset="firefox_logo-only_RGB120.png 480w,
-             firefox_logo-only_RGB400.png 400w"
+          <img  srcset="firefox-addons120.jpg 480w,
+          firefox-addons400.jpg"
              sizes="(max-width: 480px) 120px,
-                    400px
+                    400px"
            src = "firefox-addons400.jpg" alt ="мозайка">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-      <img srcset="firefox_logo-only_RGB120.png 480w,
-             firefox_logo-only_RGB400.png 400w"
+      <img type="image/svg+xml" srcset="mdn.svg 480w,
+      mdn.svg 400w"
              sizes="(max-width: 480px) 120px,
-                    400px
+                    400px"
          src = "mdn.svg" alt ="карта мозила">
         </a>
         <div class="clearfix"></div>
@@ -152,9 +151,9 @@
       <div class="red-panda">
         <!-- insert picture element -->
 <picture>
-  <source media="(max-width: 600px)"red-panda600.jpg">
-  <source media="(min-width: 1920px)" red-panda1200">
-  <img src="elva-800w.jpg" alt="red-panda">
+  <source media="(max-width: 600px)" srcset= "red-panda600.jpg">
+  <source media="(min-width: 1920px)" srcset= "red-panda1200.jpg">
+  <img src="red-panda1200.jpg" alt="red-panda">
 </picture>
 
       </div>
